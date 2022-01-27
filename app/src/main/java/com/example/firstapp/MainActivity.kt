@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     fun loginClickHandler(view: View) {
         var intent: Intent
         intent = Intent(this, LoginActivity::class.java)
+        intent.putExtra("check", "Checking Data Transfer")
         startActivity(intent)
     }
 }
