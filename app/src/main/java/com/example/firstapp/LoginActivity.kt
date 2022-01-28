@@ -21,6 +21,10 @@ class LoginActivity : AppCompatActivity() {
 
             R.id.btnLogin -> {
                 Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
+
+                //Invoking the RecyclerActivity upon clicking on the login button
+                val recyclerIntent = Intent(this, RecyclerActivity::class.java)
+                startActivity(recyclerIntent)
             }
 
             R.id.btnAlarm -> {
